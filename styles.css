@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f7f6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+/*Top*/
+header {
+    background: #1a252f;
+    color: #fff;
+    padding: 64px 0 32px;
+    text-align: center;
+    border-bottom: 4px solid #3498db;
+}
+
+header h1 {
+    font-size: 44.8px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 19px;
+    color: #bdc3c7;
+    margin-bottom: 32px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 19px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: all .3s ease;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, .1);
+    border-color: #3498db;
+}
+
+.sekcia {
+    padding: 64px 0;
+}
+
+.sekcia h2 {
+    color: #1a252f;
+    margin-bottom: 32px;
+    font-size: 35.2px;
+    text-align: center;
+    position: relative;
+}
+
+.sekcia h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #3498db;
+    margin: 8px auto 0;
+}
+/*Mid*/
+.zrucnosti-grid,
+.projekty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.zrucnost-karta,
+.projekt-karta {
+    background: #fff;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .05);
+    border-top: 4px solid #3498db;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.zrucnost-karta:hover,
+.projekt-karta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, .1);
+}
+
+.zrucnost-karta h3,
+.projekt-karta h3 {
+    color: #2c3e50;
+    margin-bottom: 16px;
+    font-size: 20.8px;
+}
+
+.zrucnost-karta ul {
+    list-style-position: inside;
+    color: #555;
+}
+
+.zrucnost-karta li {
+    margin-bottom: 9.6px;
+}
+
+.projekt-karta p {
+    color: #555;
+}
+/*Bottom*/
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#kontakt p {
+    margin-bottom: 12.8px;
+    text-align: center;
+    font-size: 17.6px;
+}
+
+#kontakt p:first-of-type {
+    margin-bottom: 32px;
+}
+
+footer {
+    background: #1a252f;
+    color: #95a5a6;
+    text-align: center;
+    padding: 32px 0;
+    margin-top: 48px;
+    font-size: 14.4px;
+}
